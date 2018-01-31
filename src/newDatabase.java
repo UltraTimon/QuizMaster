@@ -39,13 +39,19 @@ public class newDatabase {
             String nextLine = sc.nextLine(); //gets the whole next line
             String[] next = nextLine.split(","); //splits the line based on commas
             readCounter++;
+            ArrayList answers = null;
 
-            //puts possible answers (PA's) in an arraylist
-            ArrayList answers = new ArrayList();
-            answers.add(next[2]);
-            answers.add(next[3]);
-            answers.add(next[4]);
-            answers.add(next[5]);
+
+            try {
+                //puts possible answers (PA's) in an arraylist
+                answers = new ArrayList();
+                answers.add(next[2]);
+                answers.add(next[3]);
+                answers.add(next[4]);
+                answers.add(next[5]);
+            } catch (ArrayIndexOutOfBoundsException e) {
+                System.out.println("comma error: " + nextLine);
+            }
 
             Question tempQ = new Question(next[0], next[1], answers); //initializes the question
             list.addQuestion(tempQ); //adds read question to questionList

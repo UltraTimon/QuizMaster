@@ -1,15 +1,57 @@
+WE ARE NUMBER ONE,1,1,1,1,1
 HTML tags are...,metadata,clothes,shoes,code,metadata
 What is the DOM?,a way of representing objects,a level of IQ,a way of representing objects,the surrounding part of a program,Directed Overhead Manipulation
 What does DOM stand for?,Document Object Model,Dearest Over-generous Mastermind,Document Object Model,Deadly Open Mintfarms,Document Open Model
 How can a DOM be defined?,via HTML,via CSS,via pure javascript,via HTML,via HTTP
-How can the DOM be interacted with?,javascript,java,CSS,HTML,Javascript
+How can the DOM be interacted with?,Javascript,java,CSS,HTML,Javascript
 How can the DOM be represented?,as a tree structure,as a road network,as a spiderweb,as a tree structure,as a git branch system
 what is the alt in an <img> tag?,description of the image,alternative link for backup image,copyright link,description of the image,description of the owner of the image
 A css file is...,a collection of rulesets,a collection of rulesets,a stupid language,a way to add interactivity to a page,the most important file of all dem files
-waht two ways are there to display HTML elements?,blocks, inline,above eachother and next to eachothe,to the front and to the back,date added and alphabetical
+what two ways are there to display HTML elements?,block and inline,above each other and next to each other,to the front and to the back,block and inline,sported on date added
 which is NOT a styling item of block elements?,spacing,padding,spacing,border,margin
 what is padding?,space between content and border of block,space between content and surrounding element,space between margin and margin,space between border of block and surrounding element,space between content and border of block
 what is border?,space between padding and margin,space between content and surrounding element,space between padding and margin,space between surrounding element and margin,space between content and padding
 how to you select a class in css?,.class,-class,:class,.class,/class
 how do you select a psuedo-class in CSS?,:pc,.pc,:pc,-pc,/pc
-is -.content div- the same as -div .content- ?,no,yes,no, ,
+What does this css select: ol li .class,ordered lists > list items > class 'class',list items > ordered lists > class 'class',class 'class' > ordered lists > list items,any list > class 'class' > list items,ordered lists > list items > class 'class'
+what does this css select: p (comma) li.prio, all paragraphs + list items with class prio, all paragraphs + list items with class prio, p > list items with class prio, list items with class prio > p, everything in the entire universe
+if two css rulesets have the excact same selector which gets applied?,the latest,the latest,the longest,the highest, THE ONE IN ALL CAPS
+CSS: what gets applied to div.content > p: p or p:content,p,p:content,p,lol idk,why not zoidberg
+CSS: what gets applied to a p.hello: p or .hello,.hello,.hello,p,gg m8,idk
+CSS: what gets applied (CSS) to .hello > p: .hello or p,p,.hello,p, 42, yoyo
+CSS: what gets applied to a loose p: * or p,p,*,p,  , 
+What CSS properties are NOT inherited from elements higher up the chain?,block-style properties,block-style properties,color,font-size,name
+what happens if you use float in css?,stuff is taken out of the normal flow,stuff is taken out of the normal flow,stuff ACTUALLY starts to float,stuff is put into the normal flow,stuff goes to the top of the page
+how do you select all elements of the DOM at once?,*,*,^,.,#
+CSS: what happens if you use clear left?,stuff goes under the left elements,stuff goes under the left elements,stuff goes to the left,stuff goes to the right,the whole squad knows the left side is safe
+CSS: what does 1.2em mean?,1.2 * default font size,1.2 * default font size,1.2 enemies,add a border of 1.2pixels,a delay of 1.2 seconds
+what is a responsive website?,a website that allows its layout to rearrange itzelf depending on the width of the browser,a website that allows its layout to rearrange itzelf depending on the width of the browser,that when you send a request, you get a response back from the server,that you can chat with other people
+what do you have to type to use jQuery?,$,$,&,*,@
+how do you select DOM elements with jQuery?,same as CSS,same as CSS,same as HTML,same as java,by calling it's tag
+what is the diffrence between append en prepend?,append=after || prepend=before,append=after || prepend=before,prepend=after || append=before,append=before || prepend=after,prepend=append || after=before
+how do you remove all children from a DOM element?,parent.empty(),parent.empty(),parent.removeAll(),parent.FinallyYouAreFree(),parent.remove()
+where are variable declarations moved to in javascript?,top,top,bottom,top of document,they are not moved
+what happens in javascript when the limit of an array is reached?,trick question, there is no limit,trick question, there is no limit,indexOutOfBoundsException
+how is data sent between computers (mostly)?,JSON strings,JSON strings,usb drives,email attachments,postcards
+JS: what does the map function do?,it runs code over every element of an array and stores the result in an array of the same size,it runs code over every element of an array and stores the result in an array of the same size,it creates a map, duh!,it maps out all dependencies
+how do you execute code every few miliseconds?,setInterval,setInterval,infinite while loop,many delay()'s after eachother,spam F5
+what does a database describe?,part of the real world,part of the real world,everything,a little bit of youself and a little bit of maggi,nothing
+what is NOT a good reason Not to use a database (got you there),just read them and learn it, pls,just read them and learn it, pls,when there's only one person using it
+what is DDL,Data definition language,Data dedication language,divine dedication language,Data definition language,dearest duck leech
+what is DDL used for,to define the whole database,to define the whole database,to program games,to build websites,to create 3D models
+what is DML?,data manipulation language,data manipulation language,data multiplication language,data matrification language,daring middle lore
+what is the idea of diffrent layers in the DBMS?,data independence,data independence,data abstraction,data manipulation,data interconnection
+what is DML used for?,retrieve and update date,retrieve and update date,defining the database,creating data structures,create GUI's
+what is a relation schema?,a list of attributes that describes the struture of a relation,a list of attributes that describes the struture of a relation,a list of rules that describes the coherence between tuples,some lines of code that describe the struture of the program,a map of names that describes who kissed who
+what is the definition of: a relation (in DBMS jargon),a set of tuples that conforms to the schema,a set of tuples that conforms to the schema,a set of data items that relate to the schema,a set of tuples that do not conform to the schema,a set of tuples that looks like the schema
+how is missing or undefined information stored?,NULL,NULL,undefined,(nothing filled in),_____
+what is a join condition?,a condition that compares two attributes,a condition that compares two attributes,a condition that compares two tables,a condition that checks if two tables can be merged,a condition that compares an attribute with itself (always)
+what is a select condition?,a condition that compares an attribute with a hard-coded value,a condition that compares an attribute with a hard-coded value,a condition that compares two attributes,a condition that compares an attribute with itself,a condition that compares an attribute with a whole row
+what keyword returns unique tuples?,DISTINCT,DISTINCT,UNIQUE,ONE,DUPLICATELESS
+Which command returns duplicates?,none,UNION,EXCEPT,none,INTERSECT
+how to get duplicates with UNION,EXCEPT and INTERSECT?,ALL,All,ALL,DUPES
+what does _ mean (SQL)?,wildcard for one character,wildcard for one character,wildcard for multiple caracters,bb,bb
+what does % stand for (SQL)?,wildcard for multiple caracters,wildcard for multiple caracters,wildcard for one character,bb,bb
+when using ORDER BY, what gives you ascending?,ASC,ASC,DESC,ECT
+when using ORDER BY, what gives you descending?,DESC,DESC,ASC,DEC
+what can a NULL value NOT represent?,value out of bounds,value out of bounds,value non-applicable,value unknown,value unavailable/withheld
