@@ -1,8 +1,10 @@
+import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args){
+
         newDatabase newDB = newDatabase.getInstance();
         Scanner ui = new Scanner(System.in);
 
@@ -60,8 +62,13 @@ public class Main {
         String a4 = sc.nextLine();
         System.out.println();
 
-        String[] answers = {a1, a2, a3, a4};
-        Question tempQ = new Question(questionText, rightAnswer, answers);
+        ArrayList userAnswers = new ArrayList();
+        userAnswers.add(a1);
+        userAnswers.add(a2);
+        userAnswers.add(a3);
+        userAnswers.add(a4);
+
+        Question tempQ = new Question(questionText, rightAnswer, userAnswers);
         newDB.getUniversalList().addQuestion(tempQ);
         System.out.println("done, question added: \n" + tempQ.toList());
     }

@@ -1,6 +1,8 @@
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class newDatabase {
@@ -31,25 +33,30 @@ public class newDatabase {
     }
 
     public QuestionList read(Scanner sc){
+        int readCounter = 0;
         QuestionList list = new QuestionList(); //initializes list to be filled by reading a file
         while(sc.hasNextLine()){
             String nextLine = sc.nextLine(); //gets the whole next line
-
             String[] next = nextLine.split(","); //splits the line based on commas
+            readCounter++;
 
-            System.out.println("reading now");
+            //puts possible answers (PA's) in an arraylist
+            ArrayList answers = new ArrayList();
+            answers.add(next[2]);
+            answers.add(next[3]);
+            answers.add(next[4]);
+            answers.add(next[5]);
 
-
-
-            String[] answers = {next[2], next[3], next[4], next[5]}; //puts possible answers (PA's) in an array
             Question tempQ = new Question(next[0], next[1], answers); //initializes the question
             list.addQuestion(tempQ); //adds read question to questionList
         }
+        System.out.println(readCounter + " questions loaded!\n");
         return list;
     }
 
     public static Scanner getScanner(){
-        String fileName = "src/Database.txt";
+        File db = new File("src/Database.txt");
+        String fileName = db.getPath();
         FileInputStream fis = null;
         InputStreamReader isr = null;
         Scanner sc = null;

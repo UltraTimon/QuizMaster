@@ -1,15 +1,15 @@
-1,1,1,1,1,1,1,1,1,1,1,1,1
 HTML tags are...,metadata,clothes,shoes,code,metadata
 What is the DOM?,a way of representing objects,a level of IQ,a way of representing objects,the surrounding part of a program,Directed Overhead Manipulation
 What does DOM stand for?,Document Object Model,Dearest Over-generous Mastermind,Document Object Model,Deadly Open Mintfarms,Document Open Model
 How can a DOM be defined?,via HTML,via CSS,via pure javascript,via HTML,via HTTP
-How can the DOM be interacted with?,Javascript,java,CSS,HTML,Javascript
+How can the DOM be interacted with?,javascript,java,CSS,HTML,Javascript
 How can the DOM be represented?,as a tree structure,as a road network,as a spiderweb,as a tree structure,as a git branch system
 what is the alt in an <img> tag?,description of the image,alternative link for backup image,copyright link,description of the image,description of the owner of the image
 A css file is...,a collection of rulesets,a collection of rulesets,a stupid language,a way to add interactivity to a page,the most important file of all dem files
-what two ways are there to display HTML elements?,block and inline,above each other and next to each other,to the front and to the back,block and inline,date added
+waht two ways are there to display HTML elements?,blocks, inline,above eachother and next to eachothe,to the front and to the back,date added and alphabetical
 which is NOT a styling item of block elements?,spacing,padding,spacing,border,margin
 what is padding?,space between content and border of block,space between content and surrounding element,space between margin and margin,space between border of block and surrounding element,space between content and border of block
 what is border?,space between padding and margin,space between content and surrounding element,space between padding and margin,space between surrounding element and margin,space between content and padding
 how to you select a class in css?,.class,-class,:class,.class,/class
 how do you select a psuedo-class in CSS?,:pc,.pc,:pc,-pc,/pc
+is -.content div- the same as -div .content- ?,no,yes,no, ,

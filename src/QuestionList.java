@@ -2,9 +2,10 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.List;
 
 public class QuestionList {
-    private ArrayList<Question> list;
+    private List<Question> list;
     private int counter;
 
     public QuestionList(){
@@ -12,7 +13,7 @@ public class QuestionList {
         this.counter = 0;
     }
 
-    public ArrayList<Question> getList() { //returns list
+    public List<Question> getList() { //returns list
         return list;
     }
 

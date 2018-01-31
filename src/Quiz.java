@@ -2,8 +2,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.InputStreamReader;
-import java.util.InputMismatchException;
-import java.util.Scanner;
+import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 public class Quiz {
@@ -15,14 +14,22 @@ public class Quiz {
         Scanner sc = new Scanner(System.in);
         list.resetCounter();
 
+        //shuffling question list
+        Collections.shuffle(list.getList());
+
         while(true){
             Question nextQuestion = list.nextQuestion();
             if(nextQuestion == null){
                 break;
             }
-            System.out.println(list.nextQuestion().getQuestionText()); //next question appears on screen
-            for(int i = 0; i < nextQuestion.getAnswers().length; i++){
-                System.out.println(i + 1 + ") " + nextQuestion.getAnswers()[i]);
+            //shuffling answers of current question
+            ArrayList currentAnswers = nextQuestion.getAnswers();
+            Collections.shuffle(currentAnswers);
+
+            //next question appears on screen
+            System.out.println(list.nextQuestion().getQuestionText());
+            for(int i = 0; i < currentAnswers.size(); i++){
+                System.out.println(i + 1 + ") " + currentAnswers.get(i));
             }
 
             //getting user input
@@ -36,7 +43,8 @@ public class Quiz {
                 System.out.println("it iss -1");
             }
 
-            if(check(userChoice, nextQuestion)){//answer gets checked
+            //checking user input
+            if(check(userChoice, nextQuestion, currentAnswers)){//answer gets checked
                 list.incr(); //counter gets incremented so next question appears
                 System.out.println("CORRECT!");
                 System.out.println("\n---------------------------------\n");
@@ -50,8 +58,8 @@ public class Quiz {
         System.out.println("End of the quizz! ");
         System.out.println("\n---------------------------------\n");
     }
-    public static boolean check(int userAnswer, Question q){
-        if(q.getAnswers()[userAnswer - 1].equals(q.getRightAnswer())){
+    public static boolean check(int userAnswer, Question q, ArrayList currentA){
+        if(currentA.get(userAnswer - 1).equals(q.getRightAnswer())){
             return true;
         }
         else return false;
