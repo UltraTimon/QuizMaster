@@ -34,12 +34,15 @@ public class newDatabase {
         QuestionList list = new QuestionList(); //initializes list to be filled by reading a file
         while(sc.hasNextLine()){
             String nextLine = sc.nextLine(); //gets the whole next line
+
             String[] next = nextLine.split(","); //splits the line based on commas
 
-            System.out.println("-");
+            System.out.println("reading now");
 
-            String[] answers = {next[2], next[3], next[4], next[5]}; //puts commas in an array
-            Question tempQ = new Question(next[0], next[1], answers); //initializes read question
+
+
+            String[] answers = {next[2], next[3], next[4], next[5]}; //puts possible answers (PA's) in an array
+            Question tempQ = new Question(next[0], next[1], answers); //initializes the question
             list.addQuestion(tempQ); //adds read question to questionList
         }
         return list;

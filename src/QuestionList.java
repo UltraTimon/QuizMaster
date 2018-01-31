@@ -38,8 +38,9 @@ public class QuestionList {
 
     public String toFile(){
         String listAsString = "";
-        for(Question q : this.list){
-            listAsString += q.toList();
+        for(int i = 0; i < this.list.size(); i++){
+            if(i != (this.list.size() - 1)) listAsString += this.list.get(i).toList() + "\n";
+            else listAsString += this.list.get(i).toList();
         }
         return listAsString;
     }

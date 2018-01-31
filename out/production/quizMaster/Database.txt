@@ -1,5 +1,6 @@
-f,f,f,f,f,f
-f,f,w,f,f,f
-f,f,g,f,f,f
-f,f,f,g,f,f
-f,f,f,f,g,f
+r, r, t, t, r, t
+ff, gg, dd, ff, gg, hh
+hehe, hihi, jeje, ieie, keke, hihi
+hello,hello,hfhf,ee,hello,ee
+test,ff,ee,ff,gg,ee
+HTML tags are...,metadata,clothes,shoes,code,metadata

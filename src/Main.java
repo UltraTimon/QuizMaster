@@ -15,7 +15,6 @@ public class Main {
             int userChoice = 0;
             try {
                 userChoice = ui.nextInt();
-                ui.nextLine();
             }catch(InputMismatchException e){
 
             }
@@ -36,6 +35,7 @@ public class Main {
         }
     }
     public static void addQuestionToList(Scanner sc, newDatabase newDB){
+        sc.nextLine();
         System.out.print("Q:");
         String questionText = sc.nextLine();
         System.out.println();
