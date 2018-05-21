@@ -31,12 +31,12 @@ how do you select DOM elements with jQuery?,same as CSS,same as CSS,same as HTML
 what is the diffrence between append en prepend?,append=after || prepend=before,append=after || prepend=before,prepend=after || append=before,append=before || prepend=after,prepend=append || after=before
 how do you remove all children from a DOM element?,parent.empty(),parent.empty(),parent.removeAll(),parent.FinallyYouAreFree(),parent.remove()
 where are variable declarations moved to in javascript?,top of scope,top of scope,bottom,top of document,they are not moved
-what happens in javascript when the limit of an array is reached?,trick question, there is no limit,trick question, there is no limit,indexOutOfBoundsException
+what happens in javascript when the limit of an array is reached?,trick question there is no limit,trick question there is no limit,indexOutOfBoundsException, the array is deleted, it automatically becomes a listIN
 how is data sent between computers (mostly)?,JSON strings,JSON strings,usb drives,email attachments,postcards
-JS: what does the map function do?,it runs code over every element of an array and stores the result in an array of the same size,it runs code over every element of an array and stores the result in an array of the same size,it creates a map, duh!,it maps out all dependencies
+JS: what does the map function do?,it runs code over every element of an array and stores the result in an array of the same size,it runs code over every element of an array and stores the result in an array of the same size,it creates a map duh!,it maps out all dependencies, it gives the shortest route to the nearest burger kingj
 how do you execute code every few miliseconds?,setInterval,setInterval,infinite while loop,many delay()'s after eachother,spam F5
 what does a database describe?,part of the real world,part of the real world,everything,a little bit of youself and a little bit of maggi,nothing
-what is NOT a good reason Not to use a database (got you there),just read them and learn it, just read them and learn it,when there's only one person using it, when you have limited resources (embedded systems), when you need data faster than a DBMS can supply it
+what is NOT a good reason Not to use a database (got you there),just read them and learn it,just read them and learn it,when there's only one person using it, when you have limited resources (embedded systems), when you need data faster than a DBMS can supply it
 what is DDL,Data definition language,Data dedication language,divine dedication language,Data definition language,dearest duck leech
 what is DDL used for,to define the whole database,to define the whole database,to program games,to build websites,to create 3D models
 what is DML?,data manipulation language,data manipulation language,data multiplication language,data matrification language,daring middle lore
@@ -49,22 +49,43 @@ what is a join condition?,a condition that compares two attributes,a condition t
 what is a select condition?,a condition that compares an attribute with a hard-coded value,a condition that compares an attribute with a hard-coded value,a condition that compares two attributes,a condition that compares an attribute with itself,a condition that compares an attribute with a whole row
 what keyword returns unique tuples?,DISTINCT,DISTINCT,UNIQUE,ONE,DUPLICATELESS
 Which command returns duplicates?,none,UNION,EXCEPT,none,INTERSECT
-how to get duplicates with UNION,EXCEPT and INTERSECT?,ALL,All,ALL,DUPES
+how to get duplicates with UNION EXCEPT and INTERSECT?,ALL,All,ALL,DUPES, MULTISETMODEENABLED
 what does _ mean (SQL)?,wildcard for one character,wildcard for one character,wildcard for multiple caracters,bb,bb
 what does % stand for (SQL)?,wildcard for multiple caracters,wildcard for multiple caracters,wildcard for one character,bb,bb
-when using ORDER BY what gives you ascending?,ASC,ASC,DESC,ECT
-when using ORDER BY what gives you descending?,DESC,DESC,ASC,DEC
+when using ORDER BY what gives you ascending?,ASC,ASC,DESC,ECT,ACS
+when using ORDER BY what gives you descending?,DESC,DESC,ASC,DECS,SCED
 what can a NULL value NOT represent?,value out of bounds,value out of bounds,value non-applicable,value unknown,value unavailable/withheld
-What is the outcome of a truth table depending on NULL? /nAnd how are null values represented in truth tables?,UNKNOWN,NULL,0,X,UNKNOWN
+What is the outcome of a truth table depending on NULL? And how are null values represented in truth tables?,UNKNOWN,NULL,0,X,UNKNOWN
 How can you check if a value is NULL in SQL?,value IS (NOT) NULL,value IS (NOT) NULL,valie = NULL,value.contains(NULL),value EQUAL TO NULL
-in SQl: is NULL = NULL?,no, every NULL is unique,no, every NULL is unique,yes
+in SQl: is NULL = NULL?,no every NULL is unique,no every NULL is unique,yes, yes its the same dont you see!i!, idk
 what does this: <> mean?,not equal to,not equal to,greater than and less than at the same time,empty HTML tag,cheat code to get diamonds in MineCraft
 where can you put a nested query in SQL?,everywhere,everywhere,at the beginning only,at the end only,in the SELECT clause only
 When are query's correlated,if the inner Q references something from the outer query,if the inner Q references something from the outer query,if the outer Q references something from the inner query,if the inner Q gives diffrent results if it is pasted in another query,if eating red meat makes you more aggressive
 what does: 1 Exist([2-3-4]) return? (SQL),false,true,false, NULL, undefined
 what does: UNIQUE([1-1-2-3-4]) return (SQL)?,false,false,true,NULL, undefined
-what does: this return: A(1-2-3) INNER JOIN B(2,3,4),2-3,2-3,1-2-3
+what does: this return: A(1-2-3) INNER JOIN B(2-3-4),2-3,2-3,1-2-3,1-2-3-4,1-4
 what does: A(1-2-3) FULL OUTER JOIN B(2-3-4) return?,1-2-3-4,1-2-3-4,2-3,1-4,1-2-3
 what does: A(1-2-3) LEFT JOIN B(2-3-4) return?,1-2-3,1-2-3,2-3,1-4,1-2-3-4
 what is an assertion?,a rule that must always be true,a rule that must always be true,something that defines the way the database looks,a rule that must always be false,code for spying on people
 what is a trigger?,code that gets executed when it is triggered,code that gets executed when someone makes an edit,code that is only there to protect the database,code for efficiently entering data,code that gets executed when it is triggered
+what is a SQL view?,a virtual table,a virtual table,a setting for how the window looks,a certain way of looking at the data,all the data about a certain subject
+what are views (except for saving a much used query) also used for?,giving people access to a part of the data,giving people access to a part of the data,deny people access to some part of the database,views are used to create powerpoints from data,views are used to create aggregations of data
+what does cascade mean (SQL,carry change through,carry change through,only dropped if not referenced,b,b
+what does restrict mean?,only drop if not referenced,only drop if not referenced,carry changed through,v,v
+How can you change things in a database schema?,ALTER,ALTER,CHANGE,EDIT,MOVE
+what is an account level privilege?,what actions a user gets,what actions a user gets,what access a user gets,what a user can see,a privilege that you can pass on to others
+what is a relation level privilege?,which parts of the DB a user gets access to,which parts of the DB a user gets access to,which actions a user gets to perform,which people it can contact,on which level of (zelfstandigheid) a user is allowed to perform
+How can you take back a privilege from someone?,REVOKE,REVOKE,TAKEBACK,GIMMEDAT,REVOKE-ACCESS
+how can you give people the option to grant other people,WITH GRANT OPTION,ALSO GRANT OPTION,PLUS GRANT OPTION,WITH GRANT OPTION,GRANT ALLOWED
+which order of scurity classes is the right one?,TS > S > C > U,TS > S > C > U,U > C > S > TS,TS > C > U > S,S > U > TS > C
+what is simple security property?,Subject S is not allowed to read Object O unless class(S) >= class(O),Subject S is not allowed to read Object O unless class(S) >= class(O),Subject S is not allowed to read Object O unless class(S) <= class(O),Subject S is not allowed to read Object O unless class(S) = class(O),Subject S is not allowed to read Object O unless class(S) <> class(O)
+what is the star property?,Subject S is not allowed to write to Object O unless class(S) <= class(O),Subject S is not allowed to write to Object O unless class(S) <= class(O),Subject S is not allowed to write to Object O unless class(S) >= class(O),Subject S is not allowed to write to Object O unless class(S) = class(O),Subject S is not allowed to write to Object O unless class(S) <> class(O)
+what is a transaction?,an executable program that forms a logical unit of DB processing,an executable program that forms a logical unit of DB processing,line of code that forms a logical unit of DB processing,the time it takes to process one piece of code,the money it costs to process one piece of code
+explain all these problems:,lost update problem,lost update problem,temporary update problem,incorrect summary problem,unrepeatable read problem
+can a transaction be performed only partly?,yes,no,yes,maybe,i don't know
+what is atomicity?,transaction should be executed completely or not at all,transaction should be executed completely or not at all,transaction should be executed at least halfway,all transactions should be independent of eachother,transactions must not exceed a certain amount of lines
+what is consistency,DB should be consistent before and after a transaction,DB should be consistent before and after a transaction,a transaction should perform the same every time,the database should change in the same way with every transaction,DB should be the same before and after a transaction
+what is isolation,transaction should work like it's the only one being executed,transaction should work like it's the only one being executed,no two transactions should be executed at the same time,a transaction should be able to perform even without internet,a transaction should be able to survive long periods of loneliness
+what is durability,the changes made should be perserved in the DB,the changes made should be preserved in the DB,the DB should survive a thunderstorm,the transaction should be able to perform, even without power
+what is a phantom record?,a record that satisfies where clause but is added just after the query,a record that satisfies where clause but is added just after the query,a record that satisfies where clause but is added just before the query,a record that is so fast people claim to have seen a phantom,a record that the DB thinks is there
+what is snapshot isolation,the DB momentarely 'freezes' the current state, performs a query and goes on,the DB momentarely 'freezes' the current state, performs a query and goes on,the DB momentarely 'resumes' the transaction, performs a query and goes on,the DB momentarely 'freezes' the current state, waits a bit and goes on,the DB momentarely 'freezes' the water, licks it and goes on
